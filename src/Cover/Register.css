@@ -1,0 +1,71 @@
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    width: 97%;
+    margin: auto;
+    margin-top: 18px;
+    background-repeat: no-repeat;
+    background: linear-gradient( rgba(0, 0, 0, 0.5),  rgba(0, 0, 0, 0.5)), url("src/assets/yy.jpg");      
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+      
+      
+  }
+  
+  .register-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .register-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .register-form .form_group {
+    margin-bottom: 20px;
+  }
+  
+  .register-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+  }
+  
+  .register-form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .register-btnn{
+    width: 100%;
+    padding: 12px;
+    background-color: #B88E3B; /* Gold color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form_group input,
+  .form_group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }

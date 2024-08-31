@@ -1,0 +1,217 @@
+
+.checkout-container {
+    display: flex;
+    gap: 100px;
+    padding: 20px;
+    width: 70%;
+    margin: auto;
+  }
+  .checkout-container .form-group {
+    flex: 1; /* Make the first name and last name divs take equal width */
+  }
+  
+  .checkout-container h2,
+  .checkout-container h3 {
+    margin-bottom: 10px;
+    margin-top: 49px;
+  }
+  
+  .checkout-container input[type="text"],
+  .checkout-container input[type="tel"],
+  .checkout-container input[type="email"],
+  .checkout-container textarea,
+  .checkout-container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .checkout-container textarea {
+    height: 100px;
+  }
+  
+  .name-container {
+    display: flex;
+    gap: 20px; /* Space between the first name and last name fields */
+  }
+  
+  .subtotal,
+  .total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    font-size: 18px;
+  }
+  
+  .total-amount {
+    font-size: 26px;
+    color: #B88E2F;
+    font-weight: bold;
+    margin-left: 50px;
+  }
+  
+  .payment-options {
+    margin-top: 30px;
+  }
+  .payment-method {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    margin-bottom: 25px;
+  }
+  
+  .payment-method .radio-label {
+    display: flex;
+    align-items: center; /* Aligns the radio button and label text on the same line */
+    color: #a6a3a3;
+    margin-bottom: 8px; /* Adds space between the label and the description */
+  }
+  .payment-method .radio-label1 {
+    display: flex;
+    align-items: center; /* Aligns the radio button and label text on the same line */
+    color: black;
+    margin-bottom: 8px; /* Adds space between the label and the description */
+  }
+  .payment-method input[type="radio"] {
+    margin-right: 10px; /* Adds space between the radio button and the label */
+  }
+  
+  .payment-description {
+    font-size: 15px;
+    color: #a6a3a3;
+   
+  }
+  
+  .privacy-policy {
+    font-size: 13px;
+    color: #a6a3a3;
+    margin-top: 25px;
+  }
+  
+  .place-order-button {
+    width: 60%;
+    padding: 16px;
+    background-color: #007bff; /* Blue color for the call to action */
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 18%;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+  .payment-options {
+    margin-top: 20px;
+  }
+  
+  .payment-options div {
+    margin-bottom: 10px;
+  }
+  
+  
+  hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 0;
+    border-top: 1px solid #ccc;
+  }
+
+.checkout-summary {
+  flex: 1 1 100%; 
+  margin-top: 100px;
+  max-width: 440px;
+  padding: 30px;
+  background-color: #fff;
+  border:none;
+  border-radius: 5px;
+  height: 800px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.checkout-form {
+  flex: 1;
+}
+.checkout-form h2{
+  margin-bottom: 10px;
+}
+
+.checkout-summary h2 {
+  font-size: 26px;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d1d9e6;
+}
+ 
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+  
+  @media (min-width: 1200px) {
+    .checkout-container {
+      width: 70%;
+    }
+  }
+  
+  /* Medium screens (768px to 1199px) */
+  @media (max-width: 1199px) and (min-width: 768px) {
+    .checkout-container {
+      flex-direction: column;
+      gap: 50px; /* Reduce gap for medium screens */
+      width: 80%;
+    }
+  
+    .checkout-summary {
+      margin-top: 0;
+      max-width: 100%;
+      height: auto; /* Adjust height to fit content */
+    }
+  
+    .checkout-form {
+      margin-top: 50px;
+    }
+  
+    .place-order-button {
+      width: 100%; /* Full width button for medium screens */
+      margin-left: 0;
+    }
+  }
+  
+  /* Small screens (up to 767px) */
+  @media (max-width: 767px) {
+    .checkout-container {
+      flex-direction: column;
+      gap: 20px; /* Further reduce gap for small screens */
+      width: 90%;
+      padding: 10px;
+    }
+  
+    .checkout-summary,
+    .checkout-form {
+      margin-top: 0;
+      max-width: 100%;
+      height: auto; /* Adjust height to fit content */
+    }
+  
+    .place-order-button {
+      width: 100%; /* Full width button for small screens */
+      margin-left: 0;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  

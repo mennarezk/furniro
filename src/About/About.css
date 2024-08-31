@@ -1,0 +1,345 @@
+  
+ /* About */
+/* Base styles (default for larger screens) */
+.coverAbout {
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.coverAbout::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    background-color: rgba(0, 0, 0, 0.3); 
+    z-index: 1;
+}
+
+.coverAbout img {
+    width: 100%;
+    height: 380px;
+    margin: auto;
+}
+
+.coverAbout h1 {
+    position: absolute;
+    z-index: 2;
+    text-align: left;
+    margin-left: 100px;
+    top: 130px;
+    color: rgba(122, 76, 24, 0.996);
+    font-size: 30px;
+}
+
+.coverAbout p {
+    position: absolute;
+    z-index: 2;
+    top: 170px;
+    color: rgb(233, 229, 229);
+    width: 25%;
+    font-size: 16px;
+    margin-left: 100px;
+}
+
+.Overview {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.Overview h2 {
+    font-size: 32px;
+    color: #676464;
+}
+
+.Overview p {
+    width: 55%;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #a2a1a1;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.containerAbout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+    width: 70%;
+    background-color: rgba(222, 209, 194, 0.25);
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.left-content, .right-content {
+    flex: 1;
+    padding: 10px;
+}
+
+.left-content h1 {
+    color: #3b3b3b;
+    margin-bottom: 6px;
+    font-size: 2rem;
+    width: 70%;
+    line-height: 1.2;
+}
+
+.left-content p {
+    color: #989393;
+    margin-bottom: 20px;
+    font-size: .92rem;
+    width: 90%;
+    line-height: 1.7;
+}
+
+.text-container p {
+    color: #989393;
+    margin-top: 8px;
+    font-size: .92rem;
+    width: 90%;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.text-container h1 {
+    color: #3b3b3b;
+    margin-bottom: 6px;
+    font-size: 2rem;
+    width: 77%;
+    line-height: 1.2;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: rgba(182, 148, 104, 0.825);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 15px;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+.image-container {
+    margin-top: 20px;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.text-container {
+    margin-top: 20px;
+}
+
+.right-content .image-container {
+    margin-bottom: 20px;
+}
+
+/* Extra Large Devices (1200px and up) */
+@media (max-width: 1200px) {
+    .containerAbout {
+        width: 80%;
+        padding: 30px;
+        gap: 30px;
+    }
+
+    .coverAbout h1 {
+        font-size: 28px;
+        margin-left: 80px;
+        top: 120px;
+    }
+
+    .coverAbout p {
+        width: 30%;
+        font-size: 15px;
+        margin-left: 80px;
+        top: 160px;
+    }
+}
+
+/* Large Devices (992px to 1199px) */
+@media (max-width: 992px) {
+    .containerAbout {
+        width: 85%;
+        padding: 30px;
+        gap: 25px;
+    }
+
+    .coverAbout h1 {
+        font-size: 26px;
+        margin-left: 60px;
+        top: 110px;
+    }
+
+    .coverAbout p {
+        width: 35%;
+        font-size: 16px;
+        margin-left: 60px;
+        top: 150px;
+    }
+    .coverAbout img{
+        height: 330px;
+    }
+    .Overview p{
+        width: 88%;
+    }
+
+    .left-content h1, .text-container h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Medium Devices (768px to 991px) */
+@media (max-width: 768px) {
+    .containerAbout {
+        width: 90%;
+        padding: 25px;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .coverAbout h1 {
+        font-size: 24px;
+        margin-left: 40px;
+        top: 100px;
+    }
+
+    .coverAbout p {
+        width: 40%;
+        font-size: 13px;
+        margin-left: 40px;
+        top: 130px;
+    }
+    .coverAbout img{
+        height: 300px;
+    }
+.Overview p{
+    width: 90%;
+}
+    .left-content, .right-content {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .left-content h1, .text-container h1 {
+        font-size: 1.6rem;
+    }
+
+    .left-content p, .text-container p {
+        font-size: .88rem;
+    }
+}
+
+/* Small Devices (576px to 767px) */
+@media (max-width: 576px) {
+    .coverAbout h1 {
+        font-size: 22px;
+        margin-left: 20px;
+        top: 90px;
+    }
+    .coverAbout img{
+        height: 250px;
+    }
+
+    .coverAbout p {
+        width: 50%;
+        font-size: 12px;
+        margin-left: 20px;
+        top: 130px;
+    }
+    .Overview p{
+        width: 90%;
+    }
+
+    .containerAbout {
+        width: 95%;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .left-content h1, .text-container h1 {
+        font-size: 1.4rem;
+    }
+
+    .left-content p, .text-container p {
+        font-size: .86rem;
+    }
+
+    .image-container {
+        height: 250px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+/* Extra Small Devices (up to 575px) */
+@media (max-width: 480px) {
+    .coverAbout img {
+        height: 200px;
+    }
+
+    .coverAbout h1 {
+        font-size: 20px;
+        left:25%;
+        top: 80px;
+       
+    }
+
+    .coverAbout p {
+        width: 50%;
+        font-size: 14px;
+        left:25%;
+        top: 110px;
+    }
+
+    .containerAbout {
+        width: 80%;
+        padding: 15px;
+       
+    }
+    .Overview p{
+        width: 88%;
+        
+    }
+
+    .left-content h1, .text-container h1 {
+        font-size: 1.2rem;
+    }
+
+    .left-content p, .text-container p {
+        font-size: .84rem;
+    }
+
+    .image-container {
+        height: 200px;
+        margin-bottom: -25px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,86 @@
+
+/* footer two */
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allows the features to wrap on smaller screens */
+    gap: 20px; /* Adds space between the feature blocks */
+    padding: 5px 0;
+    width: 90%;
+    margin: auto;
+    background-color: #d8c08889;
+    margin-top: 50px;
+    
+  }
+  
+  .feature {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    flex-basis: 22%; /* Adjusts the width of each feature block */
+    transition: transform 0.3s ease;
+  }
+  
+  .icoon {
+    font-size: 36px;
+    color: #b88e2f;
+    margin-right: 15px; /* Adds space between the icon and the text */
+  }
+  
+  .text-container {
+    width: 90%;
+  }
+  
+  .text-container h3 {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .text-container p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  
+  /* Responsive Adjustments */
+  @media (min-width: 1440px) {
+    .feature {
+      flex-basis: 22%; /* Four features in a row */
+    }
+  }
+  
+  /* Large Screens (1024px to 1440px) */
+  @media (max-width: 1440px) and (min-width: 1024px) {
+    .feature {
+      flex-basis: 30%; /* Three features in a row */
+    }
+  }
+  
+  /* Medium Screens (768px to 1024px) */
+  @media (max-width: 1024px) and (min-width: 768px) {
+    .feature {
+      flex-basis: 45%; /* Two features in a row */
+    }
+  }
+  
+  /* Small Screens (Mobile, less than 768px) */
+  @media (max-width: 768px) {
+    .feature {
+      flex-basis: 100%; /* One feature per row */
+    }
+  
+    .text-container h3 {
+      font-size: 16px; /* Slightly smaller heading for mobile */
+    }
+  
+    .text-container p {
+      font-size: 14px; /* Slightly smaller paragraph for mobile */
+    }
+  
+    .icoon {
+      font-size: 30px; /* Smaller icon size for mobile */
+    }
+  }
+

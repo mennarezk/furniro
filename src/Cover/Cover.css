@@ -1,0 +1,199 @@
+
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #96732339; /* Use the background color similar to the image */
+  }
+  
+  .text-cont {
+    text-align: left;
+    margin-bottom: 50px;
+  }
+  
+  .text-cont .Title {
+    font-size: 4rem; /* Adjust the font size as per the design */
+    color: #9a6d05; /* Gold color for the title */
+    font-weight:900;
+    margin: 0;
+     /* font-family: 'Poppins'; */
+  }
+  
+  .text-cont .subtitle {
+    font-size: 2rem;
+    color: #ca9147; /* Lighter gold color for the subtitle */
+    margin: 0;
+    padding-top: 1px;
+    font-weight:100;
+    font-family: 'Poppins'  ;
+  }
+  
+  .text-cont .description {
+    font-size: 1.2rem;
+    color: #7e7676b3;
+    margin-top: 10px;
+   width: 37%;
+    font-family: 'Montserrat';  
+  }
+  
+  .logo-container {
+    margin-top: -30px; 
+  }
+  
+  .logoo {
+    width: 170px; 
+    height: auto;
+  }
+  .button-container {
+    position: absolute;
+    top: 60px;
+    right: 120px;
+  }
+  
+  .button-container .login-btn,
+  .button-container .register-btn {
+    padding: 10px 20px;
+    margin-left: 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .login-btn {
+    background-color: #d3a853c3; /* Gold color */
+    color: white;
+  }
+  
+
+  
+  .register-btn {
+    background-color: #d3a853c3; 
+    color: white;
+  }
+@media (max-width: 768px) {
+  .landing-container {
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  .text-cont {
+    text-align: center;
+  }
+  .text-cont .Title, .text-cont .subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .text-cont .description {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .logo-container {
+    margin-left: 100px; /* added margin-left: 100px */
+    margin-top: 20px;
+  }
+  .logo {
+    width: 180px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .button-container {
+    position: relative;
+    top: -18%;
+    right:-25%;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .button-container .login-btn, .button-container .register-btn {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  .landing-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .text-cont {
+    text-align: center;
+  }
+  .text-cont .Title, .text-cont .subtitle {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .text-cont .description {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .logo-container {
+    margin-top: 20px;
+  }
+  .logo {
+    width: 200px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .button-container {
+    position: relative;
+    top: -15%;
+    right:-20%;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .button-container .login-btn, .button-container .register-btn {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+@media (min-width: 993px) {
+  .landing-container {
+    flex-direction: row;
+    align-items: center;
+    /* margin-left: 0; */
+  }
+  .text-cont {
+    margin-left: 100px;
+  }
+  .text-cont .Title, .text-cont .subtitle {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+  }
+  .text-cont .description {
+    width: 60%;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+  }
+  .logo-container {
+    margin-top: 10;
+    margin-left: 100px;
+  }
+  .logo {
+    width: 250px;
+    height: auto;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+  }
+  .button-container {
+    margin-top: 20px; /* Add some margin top to create space */
+    text-align: center;
+  }
+  .button-container .login-btn, .button-container .register-btn {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
